@@ -16,6 +16,10 @@ To calculate the value for the Output Compare Register (OCR1A), we use this form
 * f(target frequency): This is our target frequency 1Hz. We want the interrupt t trigger once every second.(1/1s = 1Hz).   
 * at the end we subtract -1 because the timer starts counting at 0.
 
+#### you can change th blink speed by adjusting the Target Frequency f = 1/time in seconds
+
+  
+
 
 
 
