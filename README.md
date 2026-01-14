@@ -11,10 +11,10 @@ To calculate the value for the Output Compare Register (OCR1A), we use this form
 
 OCR1A = f(clock)/N *f(target frequency)
 
-so, f(clock) is the system clock speed of the arduino uno (16MHz)   
-N: This is the prescaler. Since the timer can only count to 65,535 (Timer1), 16MHz is too fast. The prescaler slows down the clock by only counting every 1024th tick.   
-f(target frequency): This is our target frequency 1Hz. We want the interrupt t trigger once every second.(1/1s = 1Hz).   
-at the end we subtract -1 because the timer starts counting at 0.
+* so, f(clock) is the system clock speed of the arduino uno (16MHz)   
+* N: This is the prescaler. Since the timer can only count to 65,535 (Timer1), 16MHz is too fast. The prescaler slows down the clock by only counting every 1024th tick.   
+* f(target frequency): This is our target frequency 1Hz. We want the interrupt t trigger once every second.(1/1s = 1Hz).   
+* at the end we subtract -1 because the timer starts counting at 0.
 
 
 
