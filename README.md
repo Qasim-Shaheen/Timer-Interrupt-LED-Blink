@@ -9,7 +9,7 @@ The project uses Timer1 because its 16-bit resolution is required to achieve a l
 
 To calculate the value for the Output Compare Register (OCR1A), we use this formula:
 
-### OCR1A = f(clock)/N *f(target frequency)
+### OCR1A = f(clock)/N *f(target frequency)-1
 
 * so, f(clock) is the system clock speed of the arduino uno (16MHz)   
 * N: This is the prescaler. Since the timer can only count to 65,535 (Timer1), 16MHz is too fast. The prescaler slows down the clock by only counting every 1024th tick.   
